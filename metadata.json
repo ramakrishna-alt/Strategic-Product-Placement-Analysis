@@ -1,0 +1,6 @@
+{
+  "name": "Strategic Product Placement Analysis",
+  "description": "Interactive BI platform for retail product placement analysis, featuring interactive dashboards, Tableau-style storyboards, dynamic calculated fields, and Gemini-powered shelf placement reviews.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
