@@ -305,14 +305,6 @@ The project includes an end-to-end demonstration covering:
 
 ---
 
-## 👨‍💻 Author
-
-**Ramakrishna**
-
-GitHub: https://github.com/Abhinaya2725
-
----
-
 ## 📄 License
 
 This project is developed for educational and academic purposes.
