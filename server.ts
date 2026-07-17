@@ -80,6 +80,27 @@ async function startServer() {
     res.json({ success: true, products: productsStore });
   });
 
+  // Bulk import products from external sources (e.g., Google Drive)
+  app.post('/api/products/import', (req, res) => {
+    const { products, mode } = req.body;
+    if (!Array.isArray(products)) {
+      return res.status(400).json({ error: 'Products must be an array' });
+    }
+    if (mode === 'replace') {
+      productsStore = products;
+    } else {
+      // Append mode: avoid identical IDs by generating distinct ones if exists
+      for (const prod of products) {
+        const exists = productsStore.some(p => p.id === prod.id);
+        if (exists) {
+          prod.id = `${prod.id}-dup-${Date.now()}-${Math.floor(Math.random() * 1000)}`;
+        }
+        productsStore.push(prod);
+      }
+    }
+    res.json({ success: true, products: productsStore });
+  });
+
   // Simulates Data Preparation: clean titles, fill in null fields, ensure numbers are absolute, flag duplicates
   app.post('/api/products/prepare', (req, res) => {
     productsStore = productsStore.map(p => {

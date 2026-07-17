@@ -112,6 +112,22 @@ export default function App() {
     }
   };
 
+  const handleImportProducts = async (imported: ProductPlacement[], mode: 'append' | 'replace') => {
+    try {
+      const res = await fetch('/api/products/import', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ products: imported, mode })
+      });
+      if (res.ok) {
+        const data = await res.json();
+        setProducts(data.products);
+      }
+    } catch (err) {
+      console.error('Failed to import products:', err);
+    }
+  };
+
   const handleAddCalculatedField = async (field: CalculatedField) => {
     try {
       const res = await fetch('/api/calculated-fields', {
@@ -287,6 +303,7 @@ export default function App() {
             onAddProduct={handleAddProduct}
             onDeleteProduct={handleDeleteProduct}
             onResetData={handleResetData}
+            onImportProducts={handleImportProducts}
           />
         )}
 

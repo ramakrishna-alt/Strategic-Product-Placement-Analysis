@@ -1,0 +1,91 @@
+Product ID,Product Position,Price,Competitor's Price,Promotion,Foot Traffic,Consumer Demographics,Product Category,Seasonal,Sales Volume,Gross Revenue,Unit Cost,Est Profit,is_duplicate
+185102,Aisle,17.07,16.16,No,Medium,Families,Clothing,No,2823,48188.61,9.39,21680.64,False
+188771,Aisle,17.41,13.13,No,Low,Seniors,Clothing,No,654,11386.14,9.58,5120.82,False
+180176,End-cap,43.16,38.37,Yes,Medium,Young adults,Electronics,Yes,2220,95815.2,23.74,43112.4,False
+112917,Aisle,42.26,38.98,Yes,Low,Families,Clothing,Yes,1568,66263.68,23.24,29823.36,False
+192936,End-cap,47.94,45.59,No,Medium,College students,Clothing,Yes,2942,141039.48,26.37,63458.94,False
+117590,End-cap,34.5,34.34,No,Medium,Seniors,Clothing,No,2968,102396.0,18.98,46063.36,False
+189118,Front of Store,41.11,40.15,Yes,High,College students,Clothing,Yes,952,39136.72,22.61,17612.0,False
+182157,Aisle,15.75,12.3,No,Low,College students,Clothing,No,2421,38130.75,8.66,17164.89,False
+141861,Aisle,30.07,26.75,Yes,High,Families,Electronics,Yes,1916,57614.12,16.54,25923.48,False
+137121,Aisle,38.0,33.38,No,High,Families,Electronics,Yes,656,24928.0,20.9,11217.6,False
+113143,Aisle,27.42,22.82,Yes,High,College students,Food,Yes,2663,73019.46,15.08,32861.42,False
+140028,Aisle,12.15,9.39,Yes,High,College students,Food,Yes,1260,15309.0,6.68,6892.2,False
+134693,Aisle,31.45,28.93,Yes,Low,College students,Food,No,2124,66799.8,17.3,30054.6,False
+151396,Front of Store,19.81,17.04,Yes,Medium,Families,Food,Yes,729,14441.49,10.9,6495.39,False
+132889,Aisle,15.74,12.8,Yes,Low,Families,Food,Yes,2265,35651.1,8.66,16036.2,False
+152174,End-cap,13.16,12.94,No,Medium,Young adults,Clothing,No,2226,29294.16,7.24,13177.92,False
+129906,Aisle,14.58,14.49,No,Medium,Young adults,Food,No,2089,30457.62,8.02,13703.84,False
+195879,Front of Store,21.03,18.54,Yes,Medium,Young adults,Food,Yes,2339,49189.17,11.57,22126.94,False
+155050,Aisle,19.92,14.93,No,High,College students,Clothing,Yes,2321,46234.32,10.96,20796.16,False
+194410,End-cap,36.2,32.49,No,Low,Young adults,Electronics,No,669,24217.8,19.91,10898.01,False
+141904,End-cap,27.36,23.03,Yes,Medium,College students,Food,Yes,1712,46840.32,15.05,21074.72,False
+124981,Front of Store,42.74,40.29,No,Low,Families,Clothing,Yes,1832,78299.68,23.51,35229.36,False
+161909,Aisle,22.16,20.85,Yes,Medium,Young adults,Electronics,No,1290,28586.4,12.19,12861.3,False
+129152,End-cap,48.51,47.56,No,Low,Seniors,Electronics,No,2356,114289.56,26.68,51431.48,False
+183243,Front of Store,39.32,37.12,Yes,Low,Families,Food,No,1524,59923.68,21.63,26959.56,False
+198248,Front of Store,27.81,23.4,Yes,High,Seniors,Clothing,No,1644,45719.64,15.3,20566.44,False
+191230,End-cap,49.95,45.65,No,High,Young adults,Clothing,No,966,48251.7,27.47,21715.68,False
+187234,Front of Store,39.27,35.55,Yes,Low,College students,Clothing,Yes,2575,101120.25,21.6,45500.25,False
+148888,Front of Store,16.92,14.44,No,Low,Families,Clothing,No,2774,46936.08,9.31,21110.14,False
+110805,Front of Store,35.91,34.74,Yes,Medium,Young adults,Food,No,2477,88949.07,19.75,40028.32,False
+179801,Front of Store,46.81,43.04,No,Low,College students,Electronics,Yes,2608,122080.48,25.75,54924.48,False
+134927,Aisle,6.1,5.37,Yes,High,Families,Electronics,Yes,2252,13737.2,3.35,6193.0,False
+123150,End-cap,37.03,34.9,Yes,Medium,Seniors,Electronics,No,2074,76800.22,20.37,34552.84,False
+159145,End-cap,19.01,18.27,Yes,High,Seniors,Electronics,No,2579,49026.79,10.46,22050.45,False
+172364,Aisle,12.3,10.3,Yes,High,College students,Clothing,No,2931,36051.3,6.77,16208.43,False
+178281,End-cap,11.64,7.89,No,Low,College students,Electronics,Yes,1145,13327.8,6.4,5999.8,False
+194339,End-cap,18.2,16.18,No,Low,Seniors,Clothing,No,1792,32614.4,10.01,14676.48,False
+174412,Aisle,23.93,19.71,No,Low,Young adults,Electronics,Yes,1796,42978.28,13.16,19342.92,False
+114877,Aisle,21.76,21.09,No,Medium,College students,Clothing,No,1860,40473.6,11.97,18209.4,False
+140727,End-cap,15.89,12.07,Yes,High,Families,Clothing,Yes,1002,15921.78,8.74,7164.3,False
+133109,Front of Store,36.13,31.33,No,High,Families,Clothing,Yes,2063,74536.19,19.87,33544.38,False
+127296,Aisle,34.02,32.31,No,Low,Families,Food,No,1165,39633.3,18.71,17836.15,False
+133757,Aisle,7.38,3.97,Yes,High,Families,Electronics,No,2071,15283.98,4.06,6875.72,False
+111760,End-cap,19.3,17.41,No,Low,College students,Clothing,No,1474,28448.2,10.62,12794.32,False
+198375,End-cap,7.1,6.84,No,Low,Seniors,Clothing,No,2202,15634.2,3.91,7024.38,False
+168837,Aisle,43.43,38.54,No,Low,Families,Electronics,No,665,28880.95,23.89,12994.1,False
+138505,Front of Store,46.72,42.48,No,Low,Seniors,Food,No,2478,115772.16,25.7,52087.56,False
+116228,End-cap,36.32,32.95,Yes,Medium,Families,Clothing,No,647,23499.04,19.98,10571.98,False
+167592,Front of Store,17.76,16.84,Yes,Medium,Seniors,Food,No,707,12556.32,9.77,5648.93,False
+133100,End-cap,47.78,43.18,Yes,Medium,Families,Clothing,No,2729,130391.62,26.28,58673.5,False
+119955,Front of Store,34.12,32.94,No,High,Young adults,Electronics,No,1590,54250.8,18.77,24406.5,False
+189349,End-cap,45.91,42.91,Yes,Medium,Seniors,Electronics,No,1245,57157.95,25.25,25721.7,False
+127478,Front of Store,29.3,26.06,No,Low,Young adults,Clothing,Yes,2498,73191.4,16.12,32923.64,False
+180661,Front of Store,39.96,36.05,No,High,Young adults,Food,Yes,1041,41598.36,21.98,18717.18,False
+186681,End-cap,39.46,35.1,No,Low,Young adults,Food,Yes,1717,67752.82,21.7,30493.92,False
+133183,Front of Store,45.07,44.26,Yes,Low,Families,Electronics,Yes,2859,128855.13,24.79,57980.52,False
+173508,Aisle,13.67,13.18,Yes,High,Families,Food,No,1658,22664.86,7.52,10196.7,False
+187930,End-cap,19.95,19.19,No,Medium,College students,Electronics,Yes,706,14084.7,10.97,6339.88,False
+124088,End-cap,48.71,46.44,Yes,High,Young adults,Electronics,Yes,2065,100586.15,26.79,45264.8,False
+190238,Front of Store,34.67,32.6,No,High,Seniors,Clothing,Yes,1917,66462.39,19.07,29905.2,False
+151925,End-cap,47.63,42.99,Yes,Medium,Seniors,Food,Yes,2179,103785.77,26.2,46695.97,False
+163234,Front of Store,12.03,7.97,No,Medium,Young adults,Clothing,No,1633,19644.99,6.62,8834.53,False
+135610,Aisle,36.04,35.59,Yes,High,College students,Electronics,Yes,1513,54528.52,19.82,24540.86,False
+117065,Aisle,47.39,47.31,Yes,High,Seniors,Electronics,Yes,758,35921.62,26.06,16168.14,False
+149315,End-cap,24.71,24.08,Yes,Low,Families,Electronics,No,718,17741.78,13.59,7984.16,False
+149510,Aisle,36.18,34.02,No,High,Young adults,Clothing,Yes,1412,51086.16,19.9,22987.36,False
+137990,Aisle,12.01,10.23,No,High,Seniors,Clothing,No,2929,35177.29,6.61,15816.6,False
+154016,End-cap,46.04,42.05,Yes,High,Seniors,Food,Yes,2366,108930.64,25.32,49023.52,False
+117751,Aisle,10.0,5.63,No,Medium,Seniors,Electronics,No,2749,27490.0,5.5,12370.5,False
+182362,Front of Store,14.1,13.51,No,Low,Families,Electronics,No,2019,28467.9,7.76,12800.46,False
+117725,Aisle,40.15,35.86,No,Low,Seniors,Food,Yes,1506,60465.9,22.08,27213.42,False
+145289,End-cap,30.65,30.08,No,High,Families,Clothing,No,1012,31017.8,16.86,13955.48,False
+173576,End-cap,46.74,46.32,Yes,Medium,College students,Electronics,No,1838,85908.12,25.71,38653.14,False
+175059,Aisle,19.16,18.62,Yes,High,Seniors,Food,No,2170,41577.2,10.54,18705.4,False
+199368,Front of Store,31.93,27.22,No,Low,Families,Clothing,Yes,1061,33877.73,17.56,15246.57,False
+162883,Front of Store,18.3,14.19,Yes,Low,Seniors,Food,No,786,14383.8,10.07,6468.78,False
+135490,Front of Store,18.72,17.29,No,Medium,Families,Clothing,No,1094,20479.68,10.3,9211.48,False
+125408,End-cap,21.79,18.92,Yes,High,College students,Clothing,Yes,2220,48373.8,11.98,21778.2,False
+134763,Front of Store,18.75,17.42,No,Low,College students,Clothing,Yes,2048,38400.0,10.31,17285.12,False
+143231,Aisle,44.2,42.72,No,Low,Families,Food,No,2578,113947.6,24.31,51276.42,False
+125409,End-cap,42.55,40.35,Yes,High,College students,Clothing,No,2040,86802.0,23.4,39066.0,False
+183074,Aisle,34.15,30.46,No,Low,College students,Clothing,No,2791,95312.65,18.78,42897.67,False
+147947,Aisle,19.24,15.64,Yes,High,Young adults,Clothing,Yes,1249,24030.76,10.58,10816.34,False
+174171,Front of Store,8.01,5.34,Yes,Medium,Seniors,Food,Yes,2273,18206.73,4.41,8182.8,False
+183064,Front of Store,19.25,17.13,Yes,Low,Young adults,Electronics,No,1773,34130.25,10.59,15354.18,False
+177131,Aisle,47.16,43.78,Yes,High,Families,Food,Yes,1733,81728.28,25.94,36774.26,False
+128179,End-cap,38.75,35.22,Yes,High,Seniors,Electronics,No,2060,79825.0,21.31,35926.4,False
+152723,Aisle,44.16,42.34,No,High,Seniors,Food,Yes,2849,125811.84,24.29,56609.63,False
+123824,Aisle,32.35,28.97,Yes,Low,Families,Electronics,No,2277,73660.95,17.79,33153.12,False
+166345,Aisle,40.77,39.73,No,Low,Seniors,Electronics,Yes,1135,46273.95,22.42,20827.25,False

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ProductPlacement, DatabaseConnection } from '../types';
 import { Database, RefreshCw, Layers, CheckCircle, AlertCircle, FileSpreadsheet, Plus, Trash2, Edit2, Check, X } from 'lucide-react';
+import GoogleDriveIntegrator from './GoogleDriveIntegrator';
 
 interface DatabaseConnectorProps {
   products: ProductPlacement[];
@@ -10,6 +11,7 @@ interface DatabaseConnectorProps {
   onAddProduct: (prod: ProductPlacement) => Promise<void>;
   onDeleteProduct: (id: string) => Promise<void>;
   onResetData: () => Promise<void>;
+  onImportProducts: (imported: ProductPlacement[], mode: 'append' | 'replace') => Promise<void>;
 }
 
 export default function DatabaseConnector({
@@ -19,7 +21,8 @@ export default function DatabaseConnector({
   onRunDataPrep,
   onAddProduct,
   onDeleteProduct,
-  onResetData
+  onResetData,
+  onImportProducts
 }: DatabaseConnectorProps) {
   const [syncingId, setSyncingId] = useState<string | null>(null);
   const [prepping, setPrepping] = useState(false);
@@ -494,6 +497,13 @@ export default function DatabaseConnector({
           </table>
         </div>
       </div>
+
+      {/* Google Drive Integrator Panel */}
+      <GoogleDriveIntegrator 
+        products={products}
+        onImportProducts={onImportProducts}
+        onRefreshDataset={() => {}}
+      />
     </div>
   );
 }
