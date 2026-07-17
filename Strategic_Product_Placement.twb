@@ -1,0 +1,151 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- Tableau Workbook - Strategic Product Placement & Business Intelligence -->
+<workbook original-version='18.1' vversion='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AutoCreateAndUpdateDSDBindings />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.theme.modern' value='true' />
+  </preferences>
+  <datasources>
+    <datasource caption='Strategic Product Placement Dataset (dataset_cleansed)' inline='true' name='federated.csv_data' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='dataset_cleansed' name='csv_connection'>
+            <connection class='textscan' directory='Data Preparation' filename='dataset_cleansed.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='csv_connection' name='dataset_cleansed.csv' table='[dataset_cleansed#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Product ID' ordinal='0' />
+            <column datatype='string' name='Product Position' ordinal='1' />
+            <column datatype='real' name='Price' ordinal='2' />
+            <column datatype='real' name="Competitor's Price" ordinal='3' />
+            <column datatype='string' name='Promotion' ordinal='4' />
+            <column datatype='string' name='Foot Traffic' ordinal='5' />
+            <column datatype='string' name='Consumer Demographics' ordinal='6' />
+            <column datatype='string' name='Product Category' ordinal='7' />
+            <column datatype='string' name='Seasonal' ordinal='8' />
+            <column datatype='integer' name='Sales Volume' ordinal='9' />
+            <column datatype='real' name='Gross Revenue' ordinal='10' />
+            <column datatype='real' name='Unit Cost' ordinal='11' />
+            <column datatype='real' name='Est Profit' ordinal='12' />
+            <column datatype='boolean' name='is_duplicate' ordinal='13' />
+          </columns>
+        </relation>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='integer' name='[Product ID]' role='dimension' type='ordinal' />
+      <column datatype='string' name='[Product Position]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Product Category]' role='dimension' type='nominal' />
+      <column datatype='string' name='[Consumer Demographics]' role='dimension' type='nominal' />
+      
+      <!-- Calculated Field 1: Profit Margin Ratio (%) -->
+      <column datatype='real' name='[Profit Margin]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='([Gross Revenue] - ([Sales Volume] * [Unit Cost])) / [Gross Revenue]' />
+      </column>
+
+      <!-- Calculated Field 2: Sales per Facing -->
+      <column datatype='real' name='[Sales per Facing]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Sales Volume] / 2.0' />
+      </column>
+
+      <!-- Calculated Field 3: Revenue Density ($/Facing) -->
+      <column datatype='real' name='[Revenue Density]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='[Gross Revenue] / 2.0' />
+      </column>
+
+      <!-- Calculated Field 4: Foot Traffic Conversion (%) -->
+      <column datatype='real' name='[Foot Traffic Conversion]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='IIF([Foot Traffic] = "High", [Sales Volume] / 5000.0, IIF([Foot Traffic] = "Medium", [Sales Volume] / 3000.0, [Sales Volume] / 1000.0)) * 100.0' />
+      </column>
+
+      <!-- Calculated Field 5: Competitor Price Index % -->
+      <column datatype='real' name='[Price Difference]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='(([Competitor&apos;s Price] - [Price]) / [Competitor&apos;s Price]) * 100.0' />
+      </column>
+      
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+    </datasource>
+  </datasources>
+  <worksheets>
+    <!-- Worksheet 1: Shelving Height Comparison -->
+    <worksheet name='Shelving Height Performance'>
+      <table>
+        <rows>[federated.csv_data].[Product Position]</rows>
+        <cols>[federated.csv_data].[Gross Revenue]</cols>
+      </table>
+    </worksheet>
+    <!-- Worksheet 2: Price Elasticity Bubble Matrix -->
+    <worksheet name='Price Elasticity Bubble Matrix'>
+      <table>
+        <rows>[federated.csv_data].[Sales Volume]</rows>
+        <cols>[federated.csv_data].[Price]</cols>
+      </table>
+    </worksheet>
+    <!-- Worksheet 3: Stacked Demographic Placement -->
+    <worksheet name='Stacked Demographic Preference'>
+      <table>
+        <rows>[federated.csv_data].[Product Position]</rows>
+        <cols>[federated.csv_data].[Consumer Demographics]</cols>
+      </table>
+    </worksheet>
+    <!-- Worksheet 4: Foot Traffic Conversion Combo -->
+    <worksheet name='Traffic Conversion Correlation'>
+      <table>
+        <rows>[federated.csv_data].[Foot Traffic]</rows>
+        <cols>[federated.csv_data].[Foot Traffic Conversion]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard name='Strategic Product Placement Dashboard'>
+      <layout-options>
+        <title caption='Strategic Product Placement BI Dashboard' />
+      </layout-options>
+      <zones>
+        <zone id='1' type='layout-basic'>
+          <zone id='2' name='Shelving Height Performance' type='worksheet' />
+          <zone id='3' name='Price Elasticity Bubble Matrix' type='worksheet' />
+          <zone id='4' name='Stacked Demographic Preference' type='worksheet' />
+          <zone id='5' name='Traffic Conversion Correlation' type='worksheet' />
+        </zone>
+      </zones>
+    </dashboard>
+  </dashboards>
+  <stories>
+    <story name='Strategic Product Placement Storybook'>
+      <layout-options>
+        <title caption='Strategic Product Placement Story' />
+      </layout-options>
+      <story-points>
+        <story-point caption='Scene 1: The Golden Zone - Eye-Level Dominance'>
+          <zone name='Strategic Product Placement Dashboard' type='dashboard' />
+        </story-point>
+        <story-point caption='Scene 2: Touch Level Strategy - Youth Impulses'>
+          <zone name='Stacked Demographic Preference' type='worksheet' />
+        </story-point>
+        <story-point caption='Scene 3: Facings ROI - Share of Shelf vs Efficiency'>
+          <zone name='Shelving Height Performance' type='worksheet' />
+        </story-point>
+        <story-point caption='Scene 4: Aisle Traffic Bottlenecks & Conversion'>
+          <zone name='Traffic Conversion Correlation' type='worksheet' />
+        </story-point>
+        <story-point caption='Scene 5: AI-Generated Retail Space Layout'>
+          <zone name='Strategic Product Placement Dashboard' type='dashboard' />
+        </story-point>
+      </story-points>
+    </story>
+  </stories>
+  <windows>
+    <window class='worksheet' name='Shelving Height Performance' />
+    <window class='worksheet' name='Price Elasticity Bubble Matrix' />
+    <window class='worksheet' name='Stacked Demographic Preference' />
+    <window class='worksheet' name='Traffic Conversion Correlation' />
+    <window class='dashboard' name='Strategic Product Placement Dashboard' />
+    <window class='story' name='Strategic Product Placement Storybook' />
+  </windows>
+</workbook>

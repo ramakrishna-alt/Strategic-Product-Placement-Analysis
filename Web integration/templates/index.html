@@ -55,47 +55,69 @@
 
         <!-- Section 1: Dashboard Embed -->
         <section class="bg-white rounded-xl border border-slate-100 shadow-xs overflow-hidden">
-            <div class="p-5 border-b border-slate-100 bg-slate-50/50">
+            <div class="p-5 border-b border-slate-100 bg-slate-50/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                 <h3 class="text-sm font-bold text-slate-800 flex items-center gap-2">
                     <span class="w-2.5 h-2.5 rounded-full bg-indigo-500"></span>
                     Interactive Tableau Dashboard Frame
                 </h3>
+                <div class="flex items-center gap-2">
+                    <a href="https://public.tableau.com/app/profile/smartbi.retail/viz/Strategic_Product_Placement_Analysis/StrategicDashboard" target="_blank" class="text-xs text-indigo-600 hover:text-indigo-800 font-semibold underline">
+                        Open on Tableau Public &rarr;
+                    </a>
+                </div>
             </div>
             
             <!-- Tableau Embed Frame Container -->
-            <div class="aspect-video w-full bg-slate-100 border-t border-slate-200 relative flex items-center justify-center overflow-hidden min-h-[500px]">
-                <!-- Simulated high fidelity preview block when not linked to live server -->
-                <div class="absolute inset-0 bg-white flex flex-col items-center justify-center text-center p-8 space-y-4">
-                    <div class="w-16 h-16 bg-slate-100 border border-dashed border-slate-300 rounded-full flex items-center justify-center">
-                        <svg class="w-8 h-8 text-slate-400 animate-bounce" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
-                        </svg>
-                    </div>
-                    <div>
-                        <h4 class="text-sm font-semibold text-slate-800">Ready to Fetch Live Tableau Server Embed</h4>
-                        <p class="text-xs text-slate-500 max-w-sm mt-1 mx-auto leading-normal">
-                            Tableau workbook frame linked to <code class="bg-slate-100 px-1 py-0.5 rounded text-[11px] font-mono font-semibold">{{ embed_url }}</code> is compiled. In production, this renders the live JavaScript Web Component interface.
-                        </p>
-                    </div>
-                    <div class="flex gap-2">
-                        <button class="px-3 py-1.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-lg text-xs font-semibold transition-colors cursor-pointer">
-                            Reload Tableau WebComponent
-                        </button>
-                    </div>
+            <div class="w-full bg-slate-100 border-t border-slate-200 relative overflow-hidden min-h-[600px]">
+                <!-- Tableau Public Interactive Widget -->
+                <div class='tableauPlaceholder mx-auto' id='viz1721200000000' style='position: relative; width: 100%; height: 600px;'>
+                    <noscript>
+                        <a href='#'>
+                            <img alt='Strategic Product Placement BI Dashboard' src='https://public.tableau.com/static/images/St/Strategic_Product_Placement_Analysis/StrategicDashboard/1_rss.png' style='border: none' />
+                        </a>
+                    </noscript>
+                    <object class='tableauViz' style='display:none;'>
+                        <param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' />
+                        <param name='embed_code_version' value='3' />
+                        <param name='site_root' value='' />
+                        <param name='name' value='Strategic_Product_Placement_Analysis/StrategicDashboard' />
+                        <param name='tabs' value='yes' />
+                        <param name='toolbar' value='yes' />
+                        <param name='static_image' value='https://public.tableau.com/static/images/St/Strategic_Product_Placement_Analysis/StrategicDashboard/1.png' />
+                        <param name='animate_transition' value='yes' />
+                        <param name='display_static_image' value='yes' />
+                        <param name='display_spinner' value='yes' />
+                        <param name='display_overlay' value='yes' />
+                        <param name='display_count' value='yes' />
+                        <param name='language' value='en-US' />
+                        <param name='filter' value='publish=yes' />
+                    </object>
                 </div>
-                <!-- Real Iframe (commented by default for offline robustness) -->
-                <!-- <iframe src="{{ embed_url }}" class="w-full h-full border-none"></iframe> -->
+                <script type='text/javascript'>
+                    var divElement = document.getElementById('viz1721200000000');
+                    var vizElement = divElement.getElementsByTagName('object')[0];
+                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height='600px';} 
+                    else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height='600px';} 
+                    else { vizElement.style.width='100%';vizElement.style.height='600px';}
+                    var scriptElement = document.createElement('script');
+                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
+                    vizElement.parentNode.insertBefore(scriptElement, vizElement);
+                </script>
             </div>
         </section>
 
         <!-- Section 2: Story Scenes Embed -->
         <section class="bg-white rounded-xl border border-slate-100 shadow-xs overflow-hidden">
-            <div class="p-5 border-b border-slate-100 bg-slate-50/50">
+            <div class="p-5 border-b border-slate-100 bg-slate-50/50 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
                 <h3 class="text-sm font-bold text-slate-800 flex items-center gap-2">
                     <span class="w-2.5 h-2.5 rounded-full bg-emerald-500"></span>
                     Multi-Scene Tableau Story Points Embed
                 </h3>
+                <div class="flex items-center gap-2">
+                    <a href="https://public.tableau.com/app/profile/smartbi.retail/viz/Strategic_Product_Placement_Analysis/Story" target="_blank" class="text-xs text-emerald-600 hover:text-emerald-800 font-semibold underline">
+                        Open Story on Tableau Public &rarr;
+                    </a>
+                </div>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-slate-100">
@@ -114,16 +136,9 @@
                     </div>
                 </div>
                 
-                <div class="col-span-3 min-h-[400px] bg-slate-50 flex items-center justify-center p-6 text-center">
-                    <div class="max-w-md space-y-3">
-                        <svg class="w-12 h-12 text-slate-300 mx-auto" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M12 6.042A8.967 8.967 0 006 3.75c-1.052 0-2.062.18-3 .512v14.25A8.987 8.987 0 016 18c2.305 0 4.408.867 6 2.292m0-14.25a8.966 8.966 0 016-2.292c1.052 0 2.062.18 3 .512v14.25A8.987 8.987 0 0018 18a8.967 8.967 0 00-6 2.292m0-14.25v14.25" />
-                        </svg>
-                        <h4 class="text-sm font-semibold text-slate-700">Scene 1 Active: The Golden Zone - Eye-Level Dominance</h4>
-                        <p class="text-xs text-slate-500 leading-normal">
-                            Premium brands and sweets command up to 180% higher margin yields when kept exactly in the eye-level area. This sheet is connected directly to the Postgres backend via Flask parameters.
-                        </p>
-                    </div>
+                <div class="col-span-3 min-h-[400px] bg-slate-50 relative overflow-hidden flex flex-col justify-between">
+                    <!-- Embedded Tableau Storyboard iframe -->
+                    <iframe src="https://public.tableau.com/views/Strategic_Product_Placement_Analysis/Story?:showVizHome=no&amp;:embed=true" class="w-full flex-1 min-h-[400px] border-none"></iframe>
                 </div>
             </div>
         </section>
