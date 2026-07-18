@@ -15,14 +15,14 @@ export default function ProjectDocs() {
   const [activeSection, setActiveSection] = useState<RubricSection>('data-collection');
 
   const menuItems: { id: RubricSection; label: string; icon: React.ReactNode }[] = [
-    { id: 'data-collection', label: '1. Data Collection & Tableau', icon: <Layers className="w-4 h-4" /> },
-    { id: 'data-prep', label: '2. Data Preparation Pipeline', icon: <Settings className="w-4 h-4" /> },
-    { id: 'data-viz', label: '3. Unique Visualizations', icon: <Layers className="w-4 h-4" /> },
-    { id: 'dashboard-design', label: '4. Dashboard Responsive Design', icon: <LayoutDashboard className="w-4 h-4" /> },
-    { id: 'story-scenes', label: '5. Storyboard & Scenes', icon: <BookOpen className="w-4 h-4" /> },
-    { id: 'performance-testing', label: '6. Performance & Filters', icon: <Filter className="w-4 h-4" /> },
-    { id: 'web-integration', label: '7. Flask Web Integration', icon: <Globe className="w-4 h-4" /> },
-    { id: 'demonstration', label: '8. Video Script & Manuals', icon: <Video className="w-4 h-4" /> },
+    { id: 'data-collection', label: '1. Ingestion & Connection setup', icon: <Layers className="w-4 h-4" /> },
+    { id: 'data-prep', label: '2. Data Preparation Specifications', icon: <Settings className="w-4 h-4" /> },
+    { id: 'data-viz', label: '3. Worksheet Configurations', icon: <Layers className="w-4 h-4" /> },
+    { id: 'dashboard-design', label: '4. Executive Dashboard UX Layout', icon: <LayoutDashboard className="w-4 h-4" /> },
+    { id: 'story-scenes', label: '5. Storyboard Narrative Scenes', icon: <BookOpen className="w-4 h-4" /> },
+    { id: 'performance-testing', label: '6. Performance & Filter Latencies', icon: <Filter className="w-4 h-4" /> },
+    { id: 'web-integration', label: '7. Flask Web Portal Deployment', icon: <Globe className="w-4 h-4" /> },
+    { id: 'demonstration', label: '8. Product Explanation Script', icon: <Video className="w-4 h-4" /> },
   ];
 
   return (
@@ -32,10 +32,10 @@ export default function ProjectDocs() {
         <div>
           <h2 className="text-xl font-display font-semibold text-slate-800 flex items-center gap-2">
             <FolderHeart className="w-5 h-5 text-emerald-600" />
-            SmartBridge Internship Evaluation Hub
+            Retail BI Deployment & Implementation Blueprint
           </h2>
           <p className="text-sm text-slate-500 mt-1">
-            Access the complete step-by-step project development manuals aligned with the requested submission folder format.
+            Access the complete technical specifications, data sanitation rules, and workbook embedding manuals.
           </p>
         </div>
       </div>
@@ -43,7 +43,7 @@ export default function ProjectDocs() {
       <div className="grid grid-cols-1 lg:grid-cols-4 gap-6">
         {/* Rubric Sidebar Navigation */}
         <div className="lg:col-span-1 space-y-1">
-          <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest px-3 block mb-2">Evaluation Rubrics</span>
+          <span className="text-[10px] font-bold text-slate-400 uppercase tracking-widest px-3 block mb-2">Technical Sections</span>
           {menuItems.map((item) => (
             <button
               key={item.id}
@@ -68,11 +68,11 @@ export default function ProjectDocs() {
             <div className="space-y-4 animate-fade-in">
               <div className="flex items-center gap-2 text-slate-900 font-bold text-base border-b border-slate-100 pb-2">
                 <Layers className="w-5 h-5 text-emerald-600" />
-                Data Collection & Dataset Connection with Tableau
+                Data Connection & Source Setup Guide
               </div>
               <div className="space-y-3">
                 <p>
-                  To clear the evaluation criteria, we collect the official product placement transactions and configure database extraction pipelines:
+                  To establish robust database extraction pipelines and map raw categorical elements properly:
                 </p>
                 <div className="p-4 bg-white rounded-lg border border-slate-100 space-y-2">
                   <span className="text-xs font-bold text-slate-800 uppercase block">Dataset Details</span>
@@ -246,19 +246,19 @@ export default function ProjectDocs() {
             <div className="space-y-4 animate-fade-in">
               <div className="flex items-center gap-2 text-slate-900 font-bold text-base border-b border-slate-100 pb-2">
                 <Video className="w-5 h-5 text-emerald-600" />
-                Video Script & Documentation Deliverables
+                Demonstration Script & System Blueprints
               </div>
               <div className="space-y-3">
                 <p>
-                  We have pre-compiled the step-by-step documentation and explanation video scripts inside the final requested directories:
+                  The complete system documentation and walkthrough scripts are deployed in the target folders:
                 </p>
                 <div className="bg-white p-4 rounded-xl border border-slate-100 text-xs text-slate-500 space-y-2.5">
                   <div>
-                    <span className="font-bold text-slate-800 block">📂 Step-by-Step Manual</span>
+                    <span className="font-bold text-slate-800 block">📂 System Blueprint Manual</span>
                     Stored in <code className="bg-slate-50 px-1 rounded font-mono text-slate-700">/Project Demonstration & Documentation/project_documentation.md</code>.
                   </div>
                   <div>
-                    <span className="font-bold text-slate-800 block">📂 Explanation Video Script</span>
+                    <span className="font-bold text-slate-800 block">📂 Executive Narrative Script</span>
                     Stored in <code className="bg-slate-50 px-1 rounded font-mono text-slate-700">/Project Demonstration & Documentation/video_explanation_script.md</code>.
                   </div>
                 </div>

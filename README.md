@@ -77,3 +77,10 @@ To run the embedded web interface locally:
 4.  Open your browser and navigate to `http://localhost:5000` to view the live dashboard embed.
 
 ---
+
+## 🎥 Explanation Video Agenda
+*   **0:00 - 0:45**: Introduction & Merchandising Scope.
+*   **0:45 - 1:30**: Ingestion & Python Data Preparation pipeline demonstration.
+*   **1:30 - 3:00**: Interacting with Dashboard worksheets & category filters.
+*   **3:00 - 4:15**: Narrative walking of the 5-scene Tableau Storybook.
+*   **4:15 - End**: Embedded Flask web portal demonstration and closing.

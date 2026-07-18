@@ -286,7 +286,7 @@ export default function App() {
               }`}
             >
               <HelpCircle className="w-3.5 h-3.5 text-slate-500" />
-              Sheet 6: Handbooks & Deliverables
+              Sheet 6: Deployment Guide
             </button>
           </div>
         </div>
